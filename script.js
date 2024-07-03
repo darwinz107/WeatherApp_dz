@@ -37,13 +37,13 @@ const cityTitle = document.createElement('h2');
 cityTitle.textContent= `${cityName}, ${country}`;
 
 const paragrahWeather = document.createElement('p');
-paragrahWeather.textContent = `The ${cityName} weather has ${weather}`
+paragrahWeather.textContent = `The weather in ${cityName}  is: ${weather}`
 
 const paragrahHumidity = document.createElement('p');
-paragrahHumidity.textContent = `The ${cityName} humidity is: ${humidity}`
+paragrahHumidity.textContent = `The humidity in ${cityName}  is:: ${humidity}`
 
 const paragrahTemp = document.createElement('p')
-paragrahTemp.textContent = `The ${cityName} temp is: ${Math.floor(temp-difKelvin)} °C`
+paragrahTemp.textContent = `The temp in ${cityName}  is: ${Math.floor(temp-difKelvin)} °C`
 
 const paragrahCountry = document.createElement('p');
 paragrahCountry.textContent = `The country of the city ${cityName} is: ${country}`;
