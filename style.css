@@ -1,0 +1,47 @@
+body{
+
+background:url(https://c4.wallpaperflare.com/wallpaper/889/724/55/5bd19c8c00da7-wallpaper-preview.jpg);
+font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 500px;
+    padding: 5px 10px 50px 10px;
+    margin: 50px auto;
+    text-align: center;
+    /* background-color: antiquewhite; */
+    background: linear-gradient(to right, antiquewhite, lightskyblue);
+    border-radius: 20px;
+     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+
+    margin: 30px 0 30px 0;
+}
+
+#inputWeather{
+width: 60%;
+    padding: 8px;
+    
+}
+#buttonSearch{
+    width: 25%;
+margin-left:7px;
+padding: 10px;
+border: none;
+border-radius: 8%;
+background-color: lightpink;
+color:white;
+cursor: pointer;
+}
+
+#buttonSearch:hover{
+
+    background-color: lightskyblue;
+    color: white;
+}
+
+
+
