@@ -31,6 +31,8 @@ const country = data.sys.country;
 const weather = data.weather[0].description;
 const humidity = data.main.humidity;
 const temp = data.main.temp;
+const coordLat= data.coord.lat;
+const coordLon = data.coord.lon;
 const icon = data.weather[0].icon;
 
 const cityTitle = document.createElement('h2');
@@ -48,6 +50,12 @@ paragrahTemp.textContent = `The temp in ${cityName}  is: ${Math.floor(temp-difKe
 const paragrahCountry = document.createElement('p');
 paragrahCountry.textContent = `The country of the city ${cityName} is: ${country}`;
 
+const paragrahLat = document.createElement('p');
+paragrahLat.textContent = `The latitude of ${cityName} is: ${coordLat}`;
+
+const paragrahLon = document.createElement('p');
+paragrahLon.textContent = `The longitude of ${cityName} is: ${coordLon}`;
+
 const iconImage = document.createElement('img');
 iconImage.src = `https://openweathermap.org/img/wn/${icon}@2x.png`
 
@@ -57,6 +65,8 @@ valWeatherData.appendChild(paragrahWeather);
 valWeatherData.appendChild(paragrahHumidity);
 valWeatherData.appendChild(paragrahTemp);
 valWeatherData.appendChild(paragrahCountry);
+valWeatherData.appendChild(paragrahLat);
+valWeatherData.appendChild(paragrahLon);
 valWeatherData.appendChild(iconImage);
 
 
