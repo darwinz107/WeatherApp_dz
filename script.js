@@ -1,5 +1,5 @@
 let api_key = 'd536357cf1ef4fb2de4b70793c2e1d74'
-cityName = "Guayaquil";
+
 let difKelvin = 273.15;
 let urlBase= 'https://api.openweathermap.org/data/2.5/weather'
 
